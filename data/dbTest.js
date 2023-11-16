@@ -1,5 +1,5 @@
-const db = require('../data/db-config')
-
+// dbTest.js in the data directory
+const db = require('./db-config'); // Correctly require db-config since it's in the same directory
 
 db('cars').select('*')
   .then(cars => {
